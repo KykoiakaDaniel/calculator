@@ -1,13 +1,11 @@
 <template>
   <div class="flex-calculator">
-    <h1>Рассчёт стоимости автомобиля</h1>
+    <h1>Расчёт стоимости автомобиля</h1>
 
     <div class="price-block">
       <div class="title">Базовая комплектация</div>
       <ul>
-        <li v-for="item in basicEquipment" :key="item.id">
-          {{ item.title }} ({{ item.price }}р.)
-        </li>
+        <li v-for="item in basicEquipment" :key="item.id">{{ item.title }} ({{ item.price }}р.)</li>
       </ul>
       <div class="cost">
         Стоимость:
@@ -61,8 +59,7 @@ export default {
         { id: 10, title: "Пакет 10", price: 28000, included: false },
         { id: 11, title: "Пакет 11", price: 30000, included: false },
         { id: 12, title: "Пакет 12", price: 32000, included: false }
-      ],
-      bool: true
+      ]
     };
   },
   computed: {
